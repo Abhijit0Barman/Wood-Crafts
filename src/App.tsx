@@ -5,9 +5,9 @@ import MainRoutes from "./Routes/MainRoutes"
 import { SingleProduct } from './pages/SingleProduct';
 function App() {
   return (
-    <div className="App">
+     <div className="App">
       {/* <SingleProduct/> */}
-          <MainRoutes />
+           <MainRoutes /> 
     </div>
   );
 }
