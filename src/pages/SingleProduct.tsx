@@ -38,45 +38,45 @@ export const SingleProduct: React.FC = () => {
   let { id } = useParams();
   const dispatch =useDispatch<ThunkDispatch< RootState,undefined, AnyAction>>();
   const [datas,setdata]=useState<Product[]>([])
-  const product:Product=//useSelector((store:any)=>store.singleProduct)
-  {
-    id: 2,
-    category: "Chairs",
-    name: "Leather Lounge Chair",
-    price: 299.95,
-    image: "https://themes.muffingroup.com/be/furniturestore/wp-content/uploads/2022/06/furniturestore-product-pic6.webp",
-    brand: "LuxuryComfort",
-    size: "28\" x 32\" x 35\"",
-    material: "Leather",
-    color: "Black",
-    finish_type: "Matte",
-    about: "Relax in style with our Leather Lounge Chair. This black leather chair features a matte finish and exceptional comfort, perfect for your living room. Dimensions: 28\" x 32\" x 35\".",
-    rating: 4,
-    reviews: [
-      {
-        username: "ComfortSeeker",
-        rating: 5,
-        comment: "This lounge chair is incredibly comfortable."
-      },
-      {
-        username: "LeatherLover",
-        rating: 4,
-        comment: "Great value for a stylish leather chair."
-      },
-      {
-        username: "FurnitureEnthusiast",
-        rating: 4,
-        comment: "Assembly was straightforward, but it took some time."
-      },
-      {
-        username: "ModernLivingFan",
-        rating: 5,
-        comment: "Perfect addition to my modern living room."
-      }
-    ]
-  }
+  const product:Product=useSelector((store:any)=>store.productReducer.singleProduct)
+  // {
+  //   id: 2,
+  //   category: "Chairs",
+  //   name: "Leather Lounge Chair",
+  //   price: 299.95,
+  //   image: "https://themes.muffingroup.com/be/furniturestore/wp-content/uploads/2022/06/furniturestore-product-pic6.webp",
+  //   brand: "LuxuryComfort",
+  //   size: "28\" x 32\" x 35\"",
+  //   material: "Leather",
+  //   color: "Black",
+  //   finish_type: "Matte",
+  //   about: "Relax in style with our Leather Lounge Chair. This black leather chair features a matte finish and exceptional comfort, perfect for your living room. Dimensions: 28\" x 32\" x 35\".",
+  //   rating: 4,
+  //   reviews: [
+  //     {
+  //       username: "ComfortSeeker",
+  //       rating: 5,
+  //       comment: "This lounge chair is incredibly comfortable."
+  //     },
+  //     {
+  //       username: "LeatherLover",
+  //       rating: 4,
+  //       comment: "Great value for a stylish leather chair."
+  //     },
+  //     {
+  //       username: "FurnitureEnthusiast",
+  //       rating: 4,
+  //       comment: "Assembly was straightforward, but it took some time."
+  //     },
+  //     {
+  //       username: "ModernLivingFan",
+  //       rating: 5,
+  //       comment: "Perfect addition to my modern living room."
+  //     }
+  //   ]
+  // }
 
-  const Navigate=useNavigate()
+ 
   const getdata=()=>{
     
 
@@ -130,7 +130,7 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
         <br></br>
         <br></br>
         <Specification><b>Reviews</b></Specification>
-        {product.reviews.map(el => (
+        {/* {product.reviews.map(el => (
           <ReviewContainer key={el.username}>
             <ReviewName><b>Name</b> : {el.username}</ReviewName>
             <p><b>Comment</b> : {el.comment}</p>
@@ -139,7 +139,7 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
             
             
           </ReviewContainer>
-        ))}
+        ))} */}
       </RightContainer>
       </DIV>
 
@@ -150,7 +150,7 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
       {datas.map((el)=>(
         <Product key={el.id}>
          <div>
-          <img src={el.image} alt="" style={{width:"100%",height:"300px"}} onClick={()=>Navigate("/product/"+id)}/>
+          <img src={el.image} alt="" style={{width:"100%",height:"300px"}} />
          </div>
          <div>
           <p>{el.name}</p>
