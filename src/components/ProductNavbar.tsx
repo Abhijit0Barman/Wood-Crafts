@@ -50,7 +50,7 @@ import { Link } from 'react-router-dom';
   
   export const DesktopNav = () => {
     const linkColor = useColorModeValue('#282828', 'gray.200');
-    const linkHoverColor = useColorModeValue('#d7b256', 'white');
+    const linkHoverColor = useColorModeValue('gray', 'white');
 
     const isDesktop = useBreakpointValue({ base: false, md: true });
   

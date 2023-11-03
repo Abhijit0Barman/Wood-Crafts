@@ -38,7 +38,7 @@ let images: Array<Item>=[
   {
     name: 'Lighting',
     href:"/Lighting",
-    src: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ay4wujm1xd2gg90m6wrm.png',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4A45I7wOfcqqyAS4XJ-hb1Je4vE4Z-jmSZQ&usqp=CAU',
   }
 ];
 
@@ -52,7 +52,7 @@ const TopProductPage: React.FC = () => {
      
         h="320px"
         w={"80%"}
-        bg={" #d7b256"}
+        bg={"#61463a"}
         color={"white"}
         // borderRadius={"20px"}
         alignItems={"center"}
@@ -66,6 +66,7 @@ const TopProductPage: React.FC = () => {
         <Box m={"20px 0"} textAlign={"center"}
           textTransform={"uppercase"}
           w={"50%"}
+          
           fontSize={["32","62"]}
           fontWeight={"600"}
           fontFamily={"Poppins"}
@@ -73,7 +74,7 @@ const TopProductPage: React.FC = () => {
           
           {name}
         </Box>
-        <Box w={["90%","40%"]}  m={"20px auto"} >
+        <Box w={["90%","40%"]}  m={"20px auto"}  >
         {selectedImage ? (
             <Image src={selectedImage.src} alt={selectedImage.name} style={{
               height:"300px",width:"300px"
