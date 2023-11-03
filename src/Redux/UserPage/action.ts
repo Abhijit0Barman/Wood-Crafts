@@ -19,7 +19,7 @@ export const getProductsData = (params: any) => (dispatch: Dispatch<AnyAction>):
     .catch(() => dispatch({ type: PRODUCT_FAILURE }));
 };
 
-export const getSingleProductData = (id: any) => (dispatch: Dispatch):void => {
+export const getSingleProductData=(id:any) =>(dispatch: Dispatch)=>{
   dispatch({ type: PRODUCT_REQUEST });
   getSingleProductDataFromAPI(id)
     .then((res) => {

@@ -1,4 +1,6 @@
+import { AddCartProductToAPI } from "../../Utilities/api";
 import {
+  ADD_CART_PRODUCT_SUCCESS,
     PRODUCT_FAILURE,
     PRODUCT_REQUEST,
     PRODUCT_SUCCESS,
@@ -16,7 +18,9 @@ import {
     isLoading: false,
     isError: false,
     products: [],
-    singleProduct: {} // Use type assertion or provide a default value
+    singleProduct: {},
+    cart:[]
+     // Use type assertion or provide a default value
   };
   
   
@@ -54,6 +58,7 @@ import {
           singleProduct: action.payload // Use type assertion or handle the actual conversion
         };
       }
+      
       default:
         return state; // Return the state as is for unknown actions
     }
