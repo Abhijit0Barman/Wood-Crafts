@@ -24,14 +24,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
   let Navigate=useNavigate()
 
   return (
-  <Box bg={"#f5f5f5"} borderRadius={"10px"} m={"auto"} p={"40px"} textAlign={"center"}>
+  <Box bg={"#61463a"} color={"white"} borderRadius={"10px"} m={"auto"} p={"40px"} textAlign={"center"}>
     <Flex  h={["300px","350","400px"]}  alignItems={"center"} justifyContent={"center"} >
     <Image
       m={"20px auto"}
       w={"100%"}
       onClick={()=>Navigate("/product/"+id)}
-    // boxSize="320px" // Set a fixed size for the image (adjust as needed)
-        // objectFit={"cover"}
         src={image}
       />
     </Flex>
@@ -40,7 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <Text fontWeight={"500"}>$ {price}</Text>
       <Flex alignItems={"center"} justifyContent={"center"} fontSize={"18"} m={"5px auto"}>
 {new Array(Math.floor(rating)).fill(0).map(()=>{
-    return(<FaStar  color="#d7b256" />)})}
+    return(<FaStar  color="white" />)})}
     {new Array(5-Math.floor(rating)).fill(0).map(()=>{
     return(<FaStar color="grey" />)})}
     
