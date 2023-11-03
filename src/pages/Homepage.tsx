@@ -4,7 +4,7 @@ import { DesktopNav } from "../components/ProductNavbar";
 export const Homepage = () => {
   return (
     <div>
-        
+      <DesktopNav />
     </div>
 
   )
