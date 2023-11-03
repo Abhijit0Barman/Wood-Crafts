@@ -23,7 +23,7 @@ const ProductItems: React.FC = () => {
 
 const params :any= {
   params: {
-category:name==="product"?null:name,
+category:name=="product"?null:name,
 
     _sort:searchParam.get("_sort"),
     _order:searchParam.get("_order"),
