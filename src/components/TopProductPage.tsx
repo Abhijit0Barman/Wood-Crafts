@@ -63,7 +63,7 @@ const TopProductPage: React.FC = () => {
         m={"auto"}
         mt={"50px"}
       >
-        <Box m={"20px 0"} textAlign={"center"}
+        <Box m={"10px 0"} textAlign={"center"}
           textTransform={"uppercase"}
           w={"50%"}
           
@@ -74,7 +74,7 @@ const TopProductPage: React.FC = () => {
           
           {name}
         </Box>
-        <Box w={["90%","40%"]}  m={"20px auto"}  >
+        <Box w={["90%","40%"]}  m={"15px auto"}  >
         {selectedImage ? (
             <Image src={selectedImage.src} alt={selectedImage.name} style={{
               height:"300px",width:"300px"

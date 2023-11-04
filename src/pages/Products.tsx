@@ -6,12 +6,13 @@ import { DesktopNav } from "../components/ProductNavbar";
 
 export const Products:React.FC = () => {
   return (
-    <div>
-           <DesktopNav />
-      <TopProductPage />
+    <Box display={'flex'}>
+      <Box ><DesktopNav isDesktop={null} name={''} /></Box>
+      <Box w="auto"> <TopProductPage />
     <Box fontFamily={"Poppins"}>
       <ProductItems />
-    </Box></div>
+    </Box></Box>
+     </Box>
   )
 }
 
