@@ -1,10 +1,10 @@
 import React from 'react'
-import { DesktopNav } from "../components/ProductNavbar";
+import { Navbar } from "../components/Navbar";
 
 export const Homepage = () => {
   return (
     <div>
-      <DesktopNav />
+      <Navbar />
     </div>
 
   )
