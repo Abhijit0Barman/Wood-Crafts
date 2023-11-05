@@ -56,6 +56,36 @@ import { Link } from 'react-router-dom';
       src: 'https://themes.muffingroup.com/be/furniturestore/wp-content/uploads/2022/06/furniturestore-category6.svg',
     }
   ];
+
+  
+interface BrandOptions {
+  [key: string]: string[];
+}
+  const BRAND_OPTIONS: BrandOptions={
+    "Tables": ['ModernLiving', 'MarbleElegance', 'RusticVibes', 'GlassGlow', 'FarmhouseCharm', 'MidCenturyStyle', 'GlassElegance'],
+    "Chairs": ['LuxuryComfort', 'ErgoComfort', 'AccentStyle', 'VelvetElegance', 'WoodenCraft', 'LeatherLux', 'VelvetChic'],
+    "Beds": ['DreamComfort', 'ComfortDream', 'MidCenturyStyle', 'CanopyDreams', 'UpholsteredLux', 'comfort'],
+    "Desks": ['MinimalCraft', 'CornerCraft', 'ModernStyle', 'GlassElegance', 'IndustrialStyle', 'starStyle'],
+    "Cabinets": ['VintageVibes', 'ModernMedia', 'ContemporaryCraft', 'RusticCharm', 'ModernLiving', 'Dijati'],
+    "Lighting":['IndustrialGlow', 'CrystalGlow', 'ArtDecoGlow', 'ModernGlow', 'Git Lab', 'Tygot', 'Lexton', 'Roshini'],
+  
+  "product":['ModernLiving','LuxuryComfort','DreamComfort','MinimalCraft','VintageVibes','IndustrialGlow'],
+  }
+
+  interface ColorOptions {
+    [key: string]: string[];
+  }
+
+  const COLOR_OPTIONS:ColorOptions= {
+    "Beds":  ['Espresso', 'Gray', 'Walnut', 'Black', 'Beige'],
+    "Cabinets":['Antique White', 'Walnut', 'Black', 'Weathered Oak', 'White and Black', 'Wooden', 'White'],
+    "Chairs":['Black', 'Pink', 'Teal', 'Oak', 'Brown', 'Navy Blue', 'White', 'wood'],
+    "Desks": ['White', 'Espresso', 'Clear and Silver', 'Rustic Brown', 'Brown'],
+    "Lighting": ['Black', 'Silver', 'Gold', 'Chrome', 'Bronze', 'White and Gold', 'White and Black', 'Skin and pink', 'black and golden', 'white light, natural light, and warm light', 'black'],
+    "Tables": ['Walnut', 'White and Gold', 'Rustic Brown', 'Clear and Gold', 'Antique White'],
+    "product":['Gray','Wooden','White and Gold','Walnut','Black','Silver','Bronze',],
+  }
+
   interface DesktopNavProps {
     isDesktop: boolean | null;
     name: string;
@@ -64,52 +94,60 @@ import { Link } from 'react-router-dom';
   export const DesktopNav: React.FC<DesktopNavProps>= () => {
     const linkColor = useColorModeValue('#282828', 'gray.200');
     const linkHoverColor = useColorModeValue('gray', 'white');
-
     const isDesktop = useBreakpointValue({ base: false, md: true });
 
   const { name } = useParams(); 
-  const dispatch = useDispatch<ThunkDispatch< RootState,undefined, AnyAction>>();
-  const [selectedBrand, setSelectedBrand] = useState<string>('');
+  // const dispatch = useDispatch<ThunkDispatch< RootState,undefined, AnyAction>>();
+  // const [selectedBrand, setSelectedBrand] = useState<string>('');
+  const [searchParams, setSerchparams]=useSearchParams()
+  const [Brand, setBrand] = useState<string[]>([]);
+  const [Color, setColor] = useState<string[]>([]);
 
   const { products } = useSelector((store: any) => ({
       products: store.productReducer.products,
       isLoading: store.productReducer.isLoading,
       isError: store.productReducer.isError,
     }));
-    const [searchParam] = useSearchParams();
-  
-  const params :any= {
-    params: {
-  category:name==="product"?null:name,
-  
-      _sort:searchParam.get("_sort"),
-      _order:searchParam.get("_order"),
-      brand:'',
-    },
-  
-  };
-  let rating=searchParam.get("rating");
-  if(rating!==""){
-    params.params.rating=rating;
-  }
-  
-  
+ 
    const handleBrandChange = (brand: string) => {
-    if (brand === 'all') {
-      setSelectedBrand('all'); 
-      params.params.brand =''; 
-    } else {
-      setSelectedBrand(brand);
-      params.params.brand = brand;
+    const option=brand
+    console.log(option)
+    let newbrand=[...Brand]
+    if(newbrand.includes(option)){
+      newbrand= newbrand.filter(el=>el!==option)
+    }else{
+      newbrand.push(option)
     }
-    dispatch(getProductsData(params));
-  };
-    useEffect(() => {
-     console.log(params)
-     params.params.brand = selectedBrand;
-  dispatch(getProductsData(params))
+    setBrand(newbrand)
   
-    }, [searchParam,name]);
+  };
+
+  const handleColorChange = (color: string) => {
+    const option = color;
+    let newColor = [...Color];
+    if (newColor.includes(option)) {
+      newColor = newColor.filter(el => el !== option);
+    } else {
+      newColor.push(option);
+    }
+    setColor(newColor);
+  };
+
+
+    useEffect(() => {
+      let params : Record<string, any> = {
+        category:name==="product"?null:name,
+        brand:Brand,
+        color: Color,
+       
+    } 
+  let rating=searchParams.get("rating");
+  if(rating){
+    params.rating = rating;
+  }
+  setSerchparams(params);
+ 
+    }, [name, Brand,  Color,setSerchparams, searchParams]);
   
   
     if (!isDesktop) {
@@ -145,31 +183,75 @@ import { Link } from 'react-router-dom';
                   </HStack>
             </Box>
           ))}
-
+ <hr />
         <Sort results={products?.length} />
-
+        <hr />
         <Box display={'flex'} flexDirection={'column'} p={2} fontSize={'16px'} fontWeight={400} color={linkColor} cursor={'pointer'} textAlign={'center'}>
-            <span>Filter by Brand:</span>
-            {BRAND_OPTIONS.map((brand) => (
-              <label key={brand}>
+      
+      
+          <h3 style={{
+            marginBottom:"10px",
+          color:'black'
+          }}> <b>Filter by Brand</b> </h3> 
+        
+            { 
+            
+            BRAND_OPTIONS[name||'']?.map((brand) => (
+            
+             <div key={brand} style={{
+              margin:'3px',
+              display:"flex",
+              justifyContent:'center',
+              alignItems:'center',
+              gap:'10px'
+             }}>
                 <input
-                  type="radio"
+                  type="checkbox"
                   name="brand"
                   value={brand}
-                  checked={selectedBrand === brand}
-                  onChange={() => handleBrandChange(brand)}
+                  checked={Brand.includes(brand)}
+                  onChange={()=>handleBrandChange(brand)}
                 />
-             
-                {  brand}
+                <label >
+                {brand}
               </label>
+              </div>
+
+
             ))}
+
+<hr />
+<h3 style={{
+  marginBottom: "10px",
+  marginTop:'10px',
+  color: 'black'
+}}><b>Filter by Color</b></h3>
+{COLOR_OPTIONS[name || '']?.map((color) => (
+  <div key={color} style={{
+    margin: '3px',
+    display: "flex",
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '10px'
+  }}>
+    <input
+      type="checkbox"
+      name="color"
+      value={color}
+      checked={Color.includes(color)}
+      onChange={() => handleColorChange(color)}
+    />
+    <label>
+      {color}
+    </label>
+  </div> ))}
           </Box>
 
         </Stack> 
              )}
-
+ 
 
       </Box>
     );
   };
-  const BRAND_OPTIONS = ['all','ModernLiving', 'DreamComfort', 'VintageVibes','LuxuryComfort'];
+ 

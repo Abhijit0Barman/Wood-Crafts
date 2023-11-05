@@ -33,12 +33,12 @@ _order:order
       rating
          });
   }
-}, [order,rating]);
+}, [order, rating, setSearchParam]);
 
 
   return (
     <div>
-      <Flex flexDirection={'column'} w={"80%"}  m={"auto"} mt={"40px"} gap={["25px",0,0]} alignItems={"center"} justifyContent={"space-between"} direction={["column","row"]}>
+      <Flex flexDirection={'column'} w={"80%"}  m={"auto"} mt={"10px"} gap={["25px",0,0]} alignItems={"center"} justifyContent={"space-between"} direction={["column","row"]}>
 <Box>
 
 <Text><b>Showing all {results} results</b></Text>
