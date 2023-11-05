@@ -102,6 +102,7 @@ interface BrandOptions {
   const [searchParams, setSerchparams]=useSearchParams()
   const [Brand, setBrand] = useState<string[]>([]);
   const [Color, setColor] = useState<string[]>([]);
+  
 
   const { products } = useSelector((store: any) => ({
       products: store.productReducer.products,
@@ -145,7 +146,11 @@ interface BrandOptions {
   if(rating){
     params.rating = rating;
   }
-  setSerchparams(params);
+ 
+ 
+    setSerchparams(params);
+  
+ 
  
     }, [name, Brand,  Color,setSerchparams, searchParams]);
   
@@ -184,8 +189,10 @@ interface BrandOptions {
             </Box>
           ))}
  <hr />
+
         <Sort results={products?.length} />
         <hr />
+        <h3 style={{color:'red'}}><b>Filter by Brand OR Color</b></h3>
         <Box display={'flex'} flexDirection={'column'} p={2} fontSize={'16px'} fontWeight={400} color={linkColor} cursor={'pointer'} textAlign={'center'}>
       
       
@@ -244,7 +251,9 @@ interface BrandOptions {
     <label>
       {color}
     </label>
+  
   </div> ))}
+ 
           </Box>
 
         </Stack> 

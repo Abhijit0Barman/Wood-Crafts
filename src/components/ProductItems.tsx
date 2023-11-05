@@ -34,6 +34,7 @@ const ProductItems: React.FC = () => {
   if(rating!==""){
     getParams.params.rating=rating;
   }
+  
   useEffect(() => {
   
     
