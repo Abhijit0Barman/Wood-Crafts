@@ -1,46 +1,167 @@
-# Getting Started with Create React App
+# resilient-partner-542
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Api_url: url
 
-## Available Scripts
+# Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="33"> there, we are <span style="color: #447ED5">Team Ez</span><img src="https://camo.githubusercontent.com/d3359cb00ab0b5ed8f2e1fe3fceb4fbaf3b614340f8c0db99c17b9f50b351770/68747470733a2f2f656d6f6a69732e736c61636b6d6f6a69732e636f6d2f656d6f6a69732f696d616765732f313533313834393433302f343234362f626c6f622d73756e676c61737365732e6769663f31353331383439343330" width="33">
 
-In the project directory, you can run:
+                                                 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="center">
+       
+ <h2>Block 28 - Construct Week Group Project</h2>
+ <h3>Project Code : resilient-partner-542 </h3>
+  <h3>Project Name : WoodCharft </h3>
+  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ </div>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+<h3 align="left">👷Contributors :</h3>
+ 
 
-### `npm run eject`
+ ![Abhijit - Copy](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/3d67baa2-3855-44e9-859a-f5cf120e27a3)⦿ [Abhijit Barman](https://github.com/Abhijit0Barman)    
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div align="center">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ <h3>logo :"![logo](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/ea5e2ba1-b9be-4d07-9dbc-6c1fa7a9b79f)
+"</h3>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![logo](https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/a7d6e8fc-f486-41b3-a74e-ce5cad8307a3)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 
+
+ 
+
+ ## 🌐 Deployed Link : url
+ 
+
+          
+ 
+
+ </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+<h3 align="left"> About This Project 📖</h3>
+
+
+ 
+ <div aling="left">
+  <p>   Welcome to the Woodcraft GitHub page. Here, we share our commitment to promoting sustainable and responsible products through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable selling experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable selling, and we invite you to join us in our mission to protect the planet through responsible buy & sell
+This project might ( and certainly does ) have bugs, vulnerabilities, or other issues. So, contributions are always welcome ☺
+ The demo is under free hosting so it may require a bit of patience ☺ </p>
+
+
+
+  
+ </div>
+   
+    
+
+✦ You can browse items or select an item from the showcase and preview.
+
+✦ Browse section remembers your list choice, Filter the data according to your choice.
+
+✦ You can search for items.
+ <div align="center">
+   <h4> 🌏 “ Save The Nature   Go Green” 🌴 </h4>
+   </div>
+   
+   
+
+##
+
+
+## Tech Stack 🛠
+![ts-logo](https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/59352def-543c-4438-95fc-ebb01b1aa615)
+
+<img width="998" alt="chakra" src="https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/94a89e6a-18d0-4be4-a7e2-25e70e03ad7b">
+
+##
+## ScreenShots 📷
+<h4>» Home Page </h4>
+
+
+
+ ##
+   
+
+ 
+ ##
+ 
+## Run Locally  💻
+
+<h4>1. Clone the project </h4>
+
+```
+git clone (https://github.com/Abhijit0Barman/resilient-partner-542.git)
+
+```
+
+<h4>2. Go to the project directory </h4> 
+
+```
+cd resilient-partner-542
+```
+<h4>3. Install dependencies </h4> 
+
+```
+npm install --engine-strict
+```
+- Use node version(LTS) should be `v16.16.0`
+- Don't change/override package.json
+
+
+<h4>4. Start the server </h4>
+
+```
+  npm start
+```
+##
+
+## Request  🤗
+<div>
+<li>If You find any bug then please create an issue we love to solve that</li>
+<li>If you want to contribute to this project then feel free to make a pull request we love to merge your request</li>
+<li>If You have suggestions or want a new feature feel free to create an issue with label features.</li>
+ </div>
+   
+  <div align="center">
+   <h4>  If you like the project then feel free to give Star 😅</h4>
+   </div>
+  
+ ## Feedback / Contributing 🤝
+ > Contributions are always welcome! Just raise an issue, we will discuss it.
+  > If you have any feedback, please reach out to us <a href="mailto: abhijitbarman96@gmail.com"></a>
+
+
+
+
+ 
+
+
+
+
+
+
