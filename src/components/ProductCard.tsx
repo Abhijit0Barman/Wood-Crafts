@@ -19,6 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   price,
   image,
   rating,
+  brand
 }) => {
   
   let Navigate=useNavigate()
@@ -26,18 +27,20 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
   <Box bg={"#61463a"} color={"white"} borderRadius={"10px"} m={"auto"} p={"40px"} textAlign={"center"}>
 
-    <Flex  h={["300px","350","400px"]}  alignItems={"center"} justifyContent={"center"} >
+    <Flex  h={["300px","300px","300px"]}  alignItems={"center"} justifyContent={"center"} >
     <Image
-      m={"20px auto"}
+      m={"10px 10px"}
       w={"100%"}
+
       onClick={()=>Navigate("/product/"+id)}
         src={image}
       />
     </Flex>
    
-      <Text>{name}</Text>
-      <Text fontWeight={"500"}>$ {price}</Text>
-      <Flex alignItems={"center"} justifyContent={"center"} fontSize={"18"} m={"5px auto"}>
+      <Text> <b>{name}</b></Text>
+      <Text color={"#c8ad90"}>{brand}</Text>
+      <Text fontWeight={"500"}>₹ {price}</Text>
+      <Flex alignItems={"center"} justifyContent={"center"} fontSize={"20"} m={"5px auto"}>
 {new Array(Math.floor(rating)).fill(0).map(()=>{
     return(<FaStar  color="white" />)})}
     {new Array(5-Math.floor(rating)).fill(0).map(()=>{

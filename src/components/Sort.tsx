@@ -13,18 +13,18 @@ const [order,setOrder] = useState(searchParam.get("_order") || "")
 
 useEffect(() => {
 
-  if (order && rating=="" ) {
+  if (order && rating==="" ) {
     setSearchParam({
       _sort:"price",
 _order:order
     });
-  } else if(order && rating!="") {
+  } else if(order && rating!=="") {
     setSearchParam({
       rating,
            _sort:"price",
      _order:order
          });
-  }else if(rating==""){
+  }else if(rating===""){
     setSearchParam({
     
          });
@@ -38,14 +38,14 @@ _order:order
 
   return (
     <div>
-      <Flex w={"80%"}  m={"auto"} mt={"40px"} gap={["25px",0,0]} alignItems={"center"} justifyContent={"space-between"} direction={["column","row"]}>
+      <Flex flexDirection={'column'} w={"80%"}  m={"auto"} mt={"40px"} gap={["25px",0,0]} alignItems={"center"} justifyContent={"space-between"} direction={["column","row"]}>
 <Box>
 
-<Text>Showing all {results} results.</Text>
+<Text><b>Showing all {results} results</b></Text>
 </Box>
-<Box w={["100%","30%"]}>
-  <Flex  alignItems={"center"} justifyContent={"space-between"} gap={["20px",0,0]} direction={["column","row"]}>
-      <Box>
+<Box w={["100%","100%"]}>
+  <Flex flexDirection={'column'} alignItems={"center"} justifyContent={"space-between"} gap={["20px",0,0]} direction={["column","row"]}>
+      <Box m={'10px'}>
       <Select variant='filled'  value={rating} name='rating' onChange={(e)=>setRating(e.target.value)}  bg={"#f5f5f5"}>
       <option value="">Filter By Rating</option>
       <option value='5'>5</option>
@@ -55,7 +55,7 @@ _order:order
   <option value='1'>1</option>
           </Select> 
       </Box>
-       <Box>
+       <Box  m={'10px'}>
        <Select variant='filled' value={order} name='price'  onChange={(e)=>setOrder(e.target.value)}  bg={"#f5f5f5"}>
        <option value=''>Sort By Price</option>
         <option value='asc'>Low To High</option>
