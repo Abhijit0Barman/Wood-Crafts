@@ -25,11 +25,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
   let Navigate=useNavigate()
 
   return (
-  <Box bg={"#61463a"} color={"white"} borderRadius={"10px"} m={"auto"} p={"40px"} textAlign={"center"}>
+  <Box bg={"#61463a"} color={"white"} borderRadius={"10px"} m={"auto"} p={"30px"} textAlign={"center"}>
 
     <Flex  h={["300px","300px","300px"]}  alignItems={"center"} justifyContent={"center"} >
     <Image
-      m={"10px 10px"}
+      m={"6px 6px"}
       w={"100%"}
 
       onClick={()=>Navigate("/product/"+id)}

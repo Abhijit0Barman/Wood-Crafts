@@ -50,7 +50,7 @@ const TopProductPage: React.FC = () => {
     <>
       <Flex 
      
-        h="320px"
+        h="280px"
         w={"80%"}
         bg={"#61463a"}
         color={"white"}
@@ -74,10 +74,10 @@ const TopProductPage: React.FC = () => {
           
           {name}
         </Box>
-        <Box w={["90%","40%"]}  m={"15px auto"}  >
+        <Box w={["90%","40%"]}  m={"10px 10px"}  >
         {selectedImage ? (
             <Image src={selectedImage.src} alt={selectedImage.name} style={{
-              height:"300px",width:"300px"
+              height:"250px",width:"300px"
             }} />
           ) : (
             <Image
