@@ -33,8 +33,7 @@ Api_url: url
 
 <div align="center">
 
- <h3>logo :"![logo](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/ea5e2ba1-b9be-4d07-9dbc-6c1fa7a9b79f)
-"</h3>
+ <h3>logo : ![logo](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/1ebfc93f-1e89-4bb9-adde-a9b47740e1ce)</h3>
 
 ![logo](https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/a7d6e8fc-f486-41b3-a74e-ce5cad8307a3)
 
@@ -101,6 +100,7 @@ This project might ( and certainly does ) have bugs, vulnerabilities, or other i
 ##
 ## ScreenShots 📷
 <h4>» Home Page </h4>
+![2023-11-05 12 40 03](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/634db4ab-e367-4e07-ae6a-00765ec5562a)
 
 
 
