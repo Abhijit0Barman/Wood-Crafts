@@ -5,6 +5,8 @@ export const Homepage = () => {
   return (
     <div>
       <DesktopNav />
+
+      homepage
     </div>
 
   )
