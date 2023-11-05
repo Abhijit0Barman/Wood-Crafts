@@ -33,7 +33,13 @@ Api_url: url
 
 <div align="center">
 
- <h3>logo : ![logo](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/1ebfc93f-1e89-4bb9-adde-a9b47740e1ce)</h3>
+ ## logo 
+
+
+![log](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/1ea51dd8-20dd-4659-9abd-b5f67d1616f5)
+
+ ##
+
 
 ![logo](https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/a7d6e8fc-f486-41b3-a74e-ce5cad8307a3)
 
@@ -98,11 +104,14 @@ This project might ( and certainly does ) have bugs, vulnerabilities, or other i
 <img width="998" alt="chakra" src="https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/94a89e6a-18d0-4be4-a7e2-25e70e03ad7b">
 
 ##
+
 ## ScreenShots 📷
 <h4>» Home Page </h4>
-![2023-11-05 12 40 03](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/634db4ab-e367-4e07-ae6a-00765ec5562a)
 
-https://github.com/Abhijit0Barman/resilient-partner-542/blob/main/public/body.jpg
+![body](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/d0be35ee-c5e0-4055-b44b-fbffcf193d28)
+
+
+![body](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/b492f7ae-13d1-4c14-8e84-e1b672367213)
 
  ##
    
