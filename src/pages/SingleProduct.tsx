@@ -75,6 +75,9 @@ export const SingleProduct: React.FC = () => {
   //     }
   //   ]
   // }
+  // const handleCart=(e:)=>{
+
+  // }
 
  
   const getdata=()=>{
@@ -119,18 +122,19 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
         <br/>
         <List>
           <ListItem><b>Category :</b> {product.category}</ListItem>
+          
+       
           <ListItem><b>Brand :</b> {product.brand}</ListItem>
+          
+        
           <ListItem><b>Material :</b> {product.material}</ListItem>
           <ListItem><b>Color :</b> {product.color}</ListItem>
           <ListItem><b>Size :</b> {product.size}</ListItem>
           <ListItem><b>Finishing :</b> {product.finish_type}</ListItem>
         </List>
-        <br></br>
-        <Button><b>ADD TO CART</b></Button>
-        <br></br>
-        <br></br>
-        <Specification><b>Reviews</b></Specification>
-        {/* {product.reviews.map(el => (
+        
+        {/* {product.revie<br></br>
+        <br></br>ws.map(el => (
           <ReviewContainer key={el.username}>
             <ReviewName><b>Name</b> : {el.username}</ReviewName>
             <p><b>Comment</b> : {el.comment}</p>
@@ -141,6 +145,9 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
           </ReviewContainer>
         ))} */}
       </RightContainer>
+      <br></br>
+        
+      <Button><b>ADD TO CART</b></Button>
       </DIV>
 
     </Container>
@@ -171,6 +178,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top:30px;
+  background-color:#61463ad5;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -191,16 +200,18 @@ const LeftContainer = styled.div`
 `;
 const DIV=styled.div`
  width: 60%;
-  padding: 10px;
-  
+  padding: 20px;
+  background-color:#61463a;
+  color:white;
   text-align: left;
+ 
 
 `
 const RightContainer = styled.div`
   width: 100%;
   padding: 10px;
   margin-top:30px;
-  max-height: 350px;
+  max-height: 250px;
   overflow-y: auto;
   text-align: left;
 
@@ -258,7 +269,7 @@ const ListItem = styled.li`
 
 const Button = styled.button`
   width: 150px;
-  background-color: red;
+  background-color: #908a7e;
   padding: 10px;
   border-radius: 30px;
 
