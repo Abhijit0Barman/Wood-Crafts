@@ -156,3 +156,5 @@ export const SignupModal: React.FC<SignupModalProps> = ({onOpens,LetClose}:any):
     </Modal>
   );
 };
+
+

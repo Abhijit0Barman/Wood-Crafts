@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useSearchParams } from "react-router-dom";
-import { getProductsData } from "../Redux/UserPage/action"; 
+import { getProductsData } from "../Redux/UserPage/action";
 import ProductCard from "./ProductCard";
 import { SimpleGrid , Box} from "@chakra-ui/react";
 import { ThunkDispatch } from "redux-thunk";
