@@ -84,6 +84,7 @@ export const SingleProduct: React.FC = () => {
     axios.post(`https://api-f37k.onrender.com/Cart`, pr)
     .then(res=>{console.log(res.data)
     console.log("data")
+    alert("Successfully added to the cart")
     })
   };
 

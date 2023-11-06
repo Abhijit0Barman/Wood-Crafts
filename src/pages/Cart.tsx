@@ -87,9 +87,7 @@ export const Cart: React.FC = () => {
   };
 
   const deletehandle = (id: number) => {
-    const updatedCart = cartData?.filter((item) => item.id !== id);
-    setCartData(updatedCart);
-    axios.patch('https://api-f37k.onrender.com/Cart', { cart: updatedCart });
+    axios.delete(`https://api-f37k.onrender.com/Cart/${id}`).then((res)=>getdata());
   };
 
   return (
