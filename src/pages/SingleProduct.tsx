@@ -10,6 +10,7 @@ import { AnyAction } from "redux";
 import { RootState } from '../Redux/store';
 import { Star } from "../components/stars";
 import styled from "styled-components"
+import { MouseEventHandler,MouseEvent } from "react";
 
 interface Review {
   username: string;
@@ -75,9 +76,16 @@ export const SingleProduct: React.FC = () => {
   //     }
   //   ]
   // }
-  // const handleCart=(e:)=>{
-
-  // }
+  //
+  const handleAdd = (e: MouseEvent<HTMLButtonElement>): void => {
+    e.preventDefault()
+    const pr={...product,quantity:1}
+  
+    axios.post(`https://api-f37k.onrender.com/Cart`, pr)
+    .then(res=>{console.log(res.data)
+    console.log("data")
+    })
+  };
 
  
   const getdata=()=>{
@@ -146,8 +154,8 @@ axios.get(`https://bb-nwfw.onrender.com/woodcraft/?_limit=4`, {
         ))} */}
       </RightContainer>
       <br></br>
-        
-      <Button><b>ADD TO CART</b></Button>
+      {/* <button onClick={handleAdd}>ADD TO CART</button> */}
+      <Button onClick={handleAdd}><b>ADD TO CART</b></Button>
       </DIV>
 
     </Container>
