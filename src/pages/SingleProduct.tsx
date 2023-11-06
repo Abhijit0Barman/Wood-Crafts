@@ -75,9 +75,6 @@ export const SingleProduct: React.FC = () => {
   //     }
   //   ]
   // }
-  // const handleCart=(e:)=>{
-
-  // }
 
  
   const getdata=()=>{

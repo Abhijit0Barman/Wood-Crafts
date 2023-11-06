@@ -44,7 +44,6 @@ let images: Array<Item>=[
 
 const TopProductPage: React.FC = () => {
   const { name } = useParams();
-  //console.log(useParams())
   const selectedImage = images.find((item) => item.name === name);
   return (
     <>
@@ -54,7 +53,6 @@ const TopProductPage: React.FC = () => {
         w={"80%"}
         bg={"#61463a"}
         color={"white"}
-        // borderRadius={"20px"}
         alignItems={"center"}
        
       justifyContent={"space-evenly"}
