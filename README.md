@@ -108,9 +108,13 @@ This project might ( and certainly does ) have bugs, vulnerabilities, or other i
 
 
 ## Tech Stack 🛠
-![ts-logo](https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/59352def-543c-4438-95fc-ebb01b1aa615)
+![chakraui](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/2c71e5e2-f442-40f5-bc8f-b8d128af61fe)
+![download](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/503a2325-4de5-43ea-8bf2-e922c47d903f)
+![images](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/2bee1725-5f4d-4fa5-94c3-9069db0ea4c6)
+![images (1)](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/fc956a2d-bad0-491e-b611-05b737ecac83)
+![images (2)](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/25b75d3d-6579-497e-8048-a9f61dfc72c2)
+![images (3)](https://github.com/Abhijit0Barman/resilient-partner-542/assets/113384779/91f92448-d376-4dc2-83cc-8f202c6e6590)
 
-<img width="998" alt="chakra" src="https://github.com/Abhijit0Barman/hulking-income-7436/assets/113384779/94a89e6a-18d0-4be4-a7e2-25e70e03ad7b">
 
 ##
 
