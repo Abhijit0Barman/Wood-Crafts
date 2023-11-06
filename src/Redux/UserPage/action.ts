@@ -1,9 +1,13 @@
 import { AnyAction, Dispatch } from 'redux'; // Import Dispatch type if not already imported
+import { ThunkAction } from "redux-thunk";
+import { RootState } from "../store";
+import { Action } from "redux";
 import {
   PRODUCT_REQUEST,
   PRODUCT_SUCCESS,
   PRODUCT_FAILURE,
   SINGLE_PRODUCT_SUCCESS,
+  LOGIN_SUCCESS,LOGIN_FAILURE
 } from '../actionTypes'; // Import your action types and adjust the path
 import { ProductURL, getProductDataFromAPI, getSingleProductDataFromAPI } from '../../Utilities/api';
 import axios from 'axios';

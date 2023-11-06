@@ -5,6 +5,7 @@ import {
     PRODUCT_REQUEST,
     PRODUCT_SUCCESS,
     SINGLE_PRODUCT_SUCCESS,
+    LOGOUT,LOGIN_SUCCESS,LOGIN_FAILURE
   } from "../actionTypes";
   
   // Define your initial state with types
@@ -15,8 +16,12 @@ import {
   
   
   const initialState= {
-    isLoading: false,
+    
     isError: false,
+    isAuth: false,
+    isLoading: false,
+    userName: "",
+    user: {},
     products: [],
     singleProduct: {},
     cart:[]
@@ -58,7 +63,7 @@ import {
           singleProduct: action.payload // Use type assertion or handle the actual conversion
         };
       }
-      
+     
       default:
         return state; // Return the state as is for unknown actions
     }

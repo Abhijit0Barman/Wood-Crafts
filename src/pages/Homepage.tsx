@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import Slider from 'react-slick';
 import sofa from "./sofa.png";
 import sofa1 from "./sofa1.png";
