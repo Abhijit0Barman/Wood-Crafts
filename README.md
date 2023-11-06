@@ -28,6 +28,8 @@ Api_url: url
 | ![Abhijit Barman](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/3d67baa2-3855-44e9-859a-f5cf120e27a3) | [Abhijit Barman](https://github.com/Abhijit0Barman) |
 | --- | --- |
 | <img src="https://avatars.githubusercontent.com/u/77391820?v=4" alt="Gauri" width="100" height="100"> | [Gauri Bidwai](https://github.com/gitusergb) |
+|  <img src="https://avatars.githubusercontent.com/u/121174683?v=4" alt="Raghuwansh Singh" width="100" height="100">  | [Raghuwansh Singh](https://github.com/wansh786) |
+| <img src="#" alt="rutik jadhav" width="100" height="100"> | [rutik jadhav](https://github.com/hrutik2) |
 
 </div>
 
