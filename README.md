@@ -82,7 +82,7 @@ Api_url cart: https://bb-nwfw.onrender.com/cart
 
  
  <div aling="left">
-  <p>   Welcome to the Woodcraft GitHub page. Here, we share our commitment to promoting sustainable and responsible products through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable selling experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable selling, and we invite you to join us in our mission to protect the planet through responsible buy & sell
+  <p>   Welcome to the Woodcraft GitHub page. Here, we share our commitment to promoting sustainable and responsible products through the power of technology. Our open-source projects aim to create innovative tools that make it easier for enthusiasts to find sustainable selling experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable selling, and we invite you to join us in our mission to protect the planet through responsible buy & sell
 This project might ( and certainly does ) have bugs, vulnerabilities, or other issues. So, contributions are always welcome ☺
  The demo is under free hosting so it may require a bit of patience ☺ </p>
 
